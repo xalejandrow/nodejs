@@ -12,6 +12,9 @@ const fileName = "target.txt"
 
 //fs.watch(fileName, () => console.log(`File changed!`))
 
+const data = fs.readFileSync(fileName)
+console.log(data.toString());
+
 fs.readFile(fileName, (err, data) => {
   if(err){
     console.log(err);
@@ -20,4 +23,4 @@ fs.readFile(fileName, (err, data) => {
   }
 });
 
-console.log('Node js async programming...');
+console.log('Node js async programming...'); 
