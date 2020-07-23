@@ -1,0 +1,14 @@
+{
+  "name": "basic",
+  "version": "1.0.0",
+  "description": "alew",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "author": "Alew",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
