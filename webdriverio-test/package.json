@@ -17,5 +17,8 @@
     "@wdio/sync": "^6.3.3",
     "chromedriver": "^84.0.1",
     "wdio-chromedriver-service": "^6.0.3"
+  },
+  "dependencies": {
+    "oculow": "^0.1.1"
   }
 }
