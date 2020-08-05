@@ -21,10 +21,12 @@ describe('Simple visual validation with oculow.', () => {
         browser.setWindowSize(1920,1080)
         //browser.url('https://lince-232621.firebaseapp.com/shopping')
         
-        browser.url('https://dev-esika.tiendabelcorp.com/pe/perfumes/c/esika-02')
-        const elem = $('#.product-item')
-            console.log("scroll to specific element")
-            elem.scrollIntoView();
+        //browser.url('https://dev-esika.tiendabelcorp.com/pe/perfumes/c/esika-02')
+        browser.url('https://loi.com.uy/')
+       $("#colecciones-home > ul > li:nth-child(1) > section > ul > li:nth-child(2)").scrollIntoView()
+        //const elem = Document.getElementById('colecciones-home')
+         /*    console.log("scroll to specific element")
+            elem.scrollIntoView(); */
         /* it('should demonstrate the scrollIntoView command', () => {
             const elem = document.getElementById('product_labels_30000016')
             console.log("scroll to specific element")

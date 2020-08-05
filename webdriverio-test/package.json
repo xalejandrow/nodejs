@@ -1,7 +1,6 @@
 {
   "name": "webdriverio-test",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,15 +9,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@wdio/cli": "^6.3.5",
-    "@wdio/local-runner": "^6.3.5",
-    "@wdio/mocha-framework": "^6.3.0",
-    "@wdio/spec-reporter": "^6.3.0",
-    "@wdio/sync": "^6.3.3",
+    "@wdio/cli": "^6.3.6",
+    "@wdio/local-runner": "^6.3.6",
+    "@wdio/mocha-framework": "^6.3.6",
+    "@wdio/spec-reporter": "^6.3.6",
+    "@wdio/sync": "^6.3.6",
     "chromedriver": "^84.0.1",
     "wdio-chromedriver-service": "^6.0.3"
   },
   "dependencies": {
     "oculow": "^0.1.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "description": ""
 }
