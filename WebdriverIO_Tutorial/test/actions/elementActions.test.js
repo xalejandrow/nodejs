@@ -1,4 +1,4 @@
-const internetPage = require('../pages/internet.page')
+const internetPage = require('../../pages/internet.page')
 const { assert } = require('chai')
 
 //internetPage = require('../pages/internet.page')

@@ -36,6 +36,66 @@ class Internet {
     get droppable() { return $('#droppable')}
     get droppableParagraph() { return $('#droppable p')}
 
+    get dropdownMenu(){ return $('#dropdown')}
+    get dropdownMenuOption1() { return $('#dropdown option:nth-child(2)')}
+    get dropdownMenuOption2() { return $('#dropdown option:nth-child(3)')}
+
+    javascriptAlertButton(index) { return $(`.example li:nth-child(${index}) button`)}
+
+    get exampleButton() { return $('.example button')}
+    deleteButton(index) { return $(`#elements button:nth-child(${index})`)}
+
+    get pageButton() { return $('#checkbox-example button')}
+
+    clickPageButton(){
+        this.pageButton.waitForDisplayed()
+        this.pageButton.click()
+    }
+
+    clickExampleButton() {
+        this.exampleButton.waitForDisplayed()
+        this.exampleButton.click()
+    }
+
+    clickDeleteButton(index){
+        this.deleteButton(index).waitForDisplayed()
+        this.deleteButton(index).click()
+    }
+
+    get enableButton() {return $('#input-example button')}
+    get inputEnabledField() { return $('#input-example input')}
+
+    /**
+     * Click the Enable/Disable Button
+     */
+    clickEnableButton(){
+        this.enableButton.waitForDisplayed()
+        this.enableButton.click()
+    }
+
+    /**
+     * Click the specified javascript alert button
+     * @param {Number} index the index of the element
+     */
+    clickJavascriptAlertButton(index) {
+        this.javascriptAlertButton(index).waitForDisplayed()
+        this.javascriptAlertButton(index).click()
+    }
+    clickDropdownMenu(){
+        this.dropdownMenu.waitForDisplayed()
+        this.dropdownMenu.click()
+    }
+
+    clickDropdownMenuOtion1(){
+        this.dropdownMenuOption1.waitForDisplayed()
+        this.dropdownMenuOption1.click()
+    }
+
+    clickDropdownMenuOtion2(){
+        this.dropdownMenuOption2.waitForDisplayed()
+        this.dropdownMenuOption2.click()
+    }
+
     /**
      * Drag and drop
      */
@@ -111,6 +171,7 @@ class Internet {
     hoverOnFigure(index) {
         this.figures(index).waitForDisplayed()
         this.figures(index).moveTo(1,1)
+        //moveToObject en la nueva versión
     }
 
     /**

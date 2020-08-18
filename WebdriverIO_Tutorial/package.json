@@ -4,15 +4,16 @@
   "description": "This is a WebdriverIO Tutorial",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/.bin/wdio ./wdio.conf.js"
+    "test": "node ./node_modules/.bin/wdio ./wdio.conf.js",
+    "actions": "./node_modules/.bin/wdio ./wdio wdio.conf.js --suite actions"
   },
   "author": "Alew",
   "license": "ISC",
   "devDependencies": {
-    "@wdio/local-runner": "^6.3.6",
-    "@wdio/mocha-framework": "^6.3.6",
-    "@wdio/spec-reporter": "^6.3.6",
-    "@wdio/sync": "^6.3.6",
+    "@wdio/local-runner": "^6.4.0",
+    "@wdio/mocha-framework": "^6.4.0",
+    "@wdio/spec-reporter": "^6.4.0",
+    "@wdio/sync": "^6.4.0",
     "chai": "^4.2.0",
     "chai-webdriverio": "^1.0.0",
     "chromedriver": "^84.0.1",
