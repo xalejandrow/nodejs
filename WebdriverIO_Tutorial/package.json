@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node ./node_modules/.bin/wdio ./wdio.conf.js",
-    "actions": "./node_modules/.bin/wdio ./wdio wdio.conf.js --suite actions"
+    "actions": "./node_modules/.bin/wdio wdio.conf.js --suite actions"
   },
   "author": "Alew",
   "license": "ISC",

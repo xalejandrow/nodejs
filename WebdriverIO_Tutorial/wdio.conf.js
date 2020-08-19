@@ -1,3 +1,10 @@
+const url = require('./urls')
+const ENV = process.env.ENV
+
+if(!ENV || !['qa','dev', 'staging'].includes(ENV)){
+    console.log('Please use the following format when running the test script: ENV=qa|dev|staging')
+    process.exit()
+}
 exports.config = {
     //
     // ====================
@@ -17,8 +24,8 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        //'./test/specs/**/*.js'
-        './test/actions/**/*.js'
+        './test/specs/**/*.js'
+       // './test/actions/**/*.js'
     ],
 
     suites: {
@@ -102,7 +109,8 @@ exports.config = {
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
     //baseUrl: 'http://localhost',
-    baseUrl: 'http://the-internet.herokuapp.com/',
+    //baseUrl: 'http://the-internet.herokuapp.com/',
+    baseUrl: url[process.env.ENV],
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -146,7 +154,8 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 6000000
+        /* timeout: 60000 */
     },
     //
     // =====
@@ -191,6 +200,12 @@ exports.config = {
      */
     // before: function (capabilities, specs) {
     // },
+    before: function (capabilities, specs) {
+        chai = require('chai');
+        assert = chai.assert;
+        expect = chai.expect;
+        should = chai.should();
+     },
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name
