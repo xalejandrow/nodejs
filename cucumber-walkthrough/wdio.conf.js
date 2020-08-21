@@ -56,14 +56,14 @@ exports.config = {
         'goog:chromeOptions': {
             args: ['--disable-gpu', 
                 '--disable-dev-shm-usage', 
-                '--window-size=1920,1080', 
+               /*  '--window-size=1920,1080',  
                 '--disable-translate', 
                 '--disable-extensions', 
                 '--disable-background-networking', 
                 '--disable-sync', 
                 '--disable-default-apps', 
                 '--mute-audio', 
-                '--no-first-run', 
+                '--no-first-run', */
                 '--disable-prompt-on-repost'
             ]
             //args: ['--headless', '--no-sandbox', '--disable-gpu', '--disable-dev-shm-usage --window-size=1920,1080', '--disable-translate', '--disable-extensions', '--disable-background-networking', '--disable-sync', '--disable-default-apps', '--mute-audio', '--no-first-run', '--disable-prompt-on-repost']
