@@ -13,10 +13,10 @@ class Home {
     }
 
     search(keyword) {
-        this.searchField.waitForDisplayed(5000);
+        this.searchField.waitForDisplayed({timeout:5000});
         this.searchField.click();
         this.searchField.setValue(keyword);
-        this.searchButton.waitForDisplayed(5000);
+        this.searchButton.waitForDisplayed({timeout:5000});
         this.searchButton.click();
       }
 }
