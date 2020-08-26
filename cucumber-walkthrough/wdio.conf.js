@@ -52,7 +52,7 @@ exports.config = {
         // 5 instances get started at a time.
         maxInstances: 5,
         //
-        browserName: 'chrome',
+        browserName: 'firefox',
         'goog:chromeOptions': {
             args: ['--disable-gpu', 
                 '--disable-dev-shm-usage', 
