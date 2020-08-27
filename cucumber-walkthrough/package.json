@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/wdio ./wdio.conf.js",
+    "test:regression": "./node_modules/.bin/wdio wdio.conf.js --cucumberOpts.tagExpression='@regression'",
+    "test:dev":"./node_modules/.bin/wdio wdio.conf.js --cucumberOpts.tagExpression='@dev'",
+    "test:int":"./node_modules/.bin/wdio wdio.conf.js --cucumberOpts.tagExpression='@int'"
   },
   "keywords": [],
   "author": "Alew",
@@ -32,6 +35,7 @@
   },
   "dependencies": {
     "@wdio/cli": "^6.4.0",
-    "Babel": "0.0.1"
+    "Babel": "0.0.1",
+    "dotenv": "^8.2.0"
   }
 }
