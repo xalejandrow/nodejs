@@ -6,13 +6,14 @@
   "scripts": {
     "test": "./node_modules/.bin/wdio ./wdio.conf.js",
     "test:regression": "./node_modules/.bin/wdio wdio.conf.js --cucumberOpts.tagExpression='@regression'",
-    "test:dev":"./node_modules/.bin/wdio wdio.conf.js --cucumberOpts.tagExpression='@dev'",
-    "test:int":"./node_modules/.bin/wdio wdio.conf.js --cucumberOpts.tagExpression='@int'"
+    "test:dev": "./node_modules/.bin/wdio wdio.conf.js --cucumberOpts.tagExpression='@dev'",
+    "test:int": "./node_modules/.bin/wdio wdio.conf.js --cucumberOpts.tagExpression='@int'"
   },
   "keywords": [],
   "author": "Alew",
   "license": "ISC",
   "devDependencies": {
+    "@applitools/eyes-webdriverio": "^5.21.1",
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.1",
     "@babel/polyfill": "^7.4.4",
